@@ -2,13 +2,17 @@
 let inputName = document.getElementById("input-name");
 let inputLastName = document.getElementById("input-lastname");
 let button = document.getElementById("button");
-function completarNome(name, lastname) {
-    return name + " " + lastname;
+function completarNome(pessoa) {
+    return pessoa.name + " " + pessoa.lastName;
 }
 if (button) {
     button.addEventListener("click", () => {
         if (inputName && inputLastName) {
-            let nomeCompleto = completarNome(inputName.value, inputLastName.value);
+            let pessoa = {
+                name: inputName.value,
+                lastName: inputLastName.value
+            };
+            let nomeCompleto = completarNome(pessoa);
             console.log(nomeCompleto);
         }
     });

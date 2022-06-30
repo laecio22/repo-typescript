@@ -2,23 +2,23 @@ let inputName =  document.getElementById("input-name") as HTMLInputElement;
 let inputLastName = document.getElementById("input-lastname") as HTMLInputElement;
 let button = document.getElementById("button");
 
-interface Pessoa {
-    name:string,
-    lastName:string
+interface User {
+    username:string,
+    userlastName:string
 }
-function completarNome(pessoa:Pessoa){
-     return pessoa.name + " " + pessoa.lastName
+function completarNome(user:User){
+     return user.username + " " + user.userlastName
 }
 
 if(button){
    button.addEventListener("click", ()=>{
      if(inputName && inputLastName){
-        let pessoa: Pessoa = {   
-            name: inputName.value,
-            lastName: inputLastName.value
+        let user: User = {   
+            username: inputName.value,
+            userlastName: inputLastName.value
         }
 
-       let nomeCompleto =  completarNome(pessoa)
+       let nomeCompleto =  completarNome(user)
        console.log(nomeCompleto)
      }
    })

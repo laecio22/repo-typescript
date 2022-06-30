@@ -1,0 +1,23 @@
+{
+  "name": "repo-typescript",
+  "version": "1.0.0",
+  "description": "repositório  seguindo  os  exercícios e  desafios  sobre  typescript propostos  pela DIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laecio22/repo-typescript.git"
+  },
+  "author": "laécio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laecio22/repo-typescript/issues"
+  },
+  "homepage": "https://github.com/laecio22/repo-typescript#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
